@@ -2,7 +2,7 @@
 from pathlib import Path
 from PyInstaller.utils.hooks import collect_data_files, collect_submodules
 
-project_dir = Path(__file__).resolve().parent
+project_dir = Path.cwd()
 icon_file = project_dir / 'assets' / 'lumidesk.ico'
 version_file = project_dir / 'version_info.txt'
 
